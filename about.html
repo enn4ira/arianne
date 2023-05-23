@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>arianne</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/work.css" rel="stylesheet">
+<link href="css/about.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $("a[href*='#header']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutQuad');
+      });
+      $("a[href*='#intro']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_intro').offset().top-68 }, 600, 'easeOutCirc');
+      });
+      $("#PanelLayer").panel({animate: true, animationDuration: 500, animationEasing: 'easeOutElastic', dismissible: false, display: 'push', position: 'left'});
+      $('.OverlayMenu1 .item-has-children').children('a').on('click', function(event)
+      {
+         event.preventDefault();
+         $(this).toggleClass('submenu-open').next('.sub-menu').slideToggle(0,'linear').end().parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(0,'linear');
+      });
+   });
+</script>
+</head>
+<body>
+   <div id="wb_header">
+      <div id="header">
+         <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-2">
+               <div id="wb_PanelMenu1" style="display:inline-block;width:48px;height:48px;z-index:0;">
+                  <a href="#PanelLayer" id="PanelMenu1">
+                     <span class="line"></span>
+                     <span class="line"></span>
+                     <span class="line"></span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_intro">
+      <div id="intro">
+         <div class="col-1">
+            <picture id="wb_Picture1" style="display:block;width:100%;height:auto;z-index:1">
+               <img src="images/QWRW2R.png" id="Picture1" alt="" width="970" height="238">
+            </picture>
+            <div id="wb_Text1">
+               <span style="color:#FFFFFF;font-family:'Bookman Old Style';font-size:17px;"><br><br>I am Arianne H. Parawan. I am 21 years old and I live in 44- Panganiban Street Cebu City. I am a working student. A graphic student by day and call center representative by night. <br><br>I make paintings about people and their emotional complexities. How they feel when isolated or collated is explored, a core contradiction being one of community verses individualism.<br><br>Soft shapes and bold colours interplay to create intoxicating compositions that on the surface display a visual freedom and aesthetic joy but belie fraught conflicting feelings beneath the surface. Vivid expressions, of abstracted cartoon forms, are utilised as key components of the compositions; amorphous masses are stacked, piled, squashed and delicately balanced, often moments away from potential collapse.<br><br>A sense of synesthesia guides me to make intuitive choices when working. Colours dance and create memorable visual melodies, a continuum of Miró and Kandinsky, albeit to a rhythm often informed by contemporary electronic music. I believe the works must perform satisfactorily to both eye and ear.</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:10;">
+      <div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:3;">
+         <a href="#intro"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+   </div>
+   <div id="wb_footer">
+      <div id="footer">
+         <div class="row">
+            <div class="col-1">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="PanelLayer" style="text-align:right;">
+      <div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:4;">
+         <img src="images/Parawan 1x1.jpg" id="Image1" alt="" width="306" height="306">
+      </div>
+      <div id="wb_Heading3" style="display:inline-block;width:100%;z-index:5;">
+         <h1 id="Heading3">arianne</h1>
+      </div>
+      <div id="wb_OverlayMenu1" style="display:inline-block;width:306px;height:120px;z-index:6;">
+         <div class="OverlayMenu1">
+            <ul class="OverlayMenu1" role="menu">
+               <li><a role="menuitem" href="./Home.html" class="OverlayMenu1-effect">Home</a></li>
+               <li><a role="menuitem" href="#" class="OverlayMenu1-effect">About</a></li>
+               <li><a role="menuitem" href="./Work.html" class="OverlayMenu1-effect">Work</a></li>
+            </ul>
+         </div>
+      </div>
+      <div id="wb_Text2" style="position:absolute;top:auto !important;bottom:0 !important;width:100% !important;">
+         <span style="color:#FFFFFF;font-family:Arial;font-size:13px;line-height:21px;">Copyright 2020 All rights reserved.<br></span><span style="color:#BDB9E3;font-family:Arial;font-size:13px;line-height:12px;">WYSIWYG Web Builder</span>
+      </div>
+   </div>
+   <script>   
+   var wb_Timer1;
+   function TimerStartTimer1()
+   {
+      wb_Timer1 = setTimeout(function()
+      {
+         var event = null;
+         ShowPanel('PanelLayer', event);
+      }, 1000);
+   }
+   function TimerStopTimer1()
+   {
+      clearTimeout(wb_Timer1);
+   }
+   TimerStartTimer1();
+   </script>
+   <a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb18.png" alt="WYSIWYG Web Builder" style="position:absolute;left:844px;top:729px;margin:0;border-width:0;z-index:250" width="88" height="31"></a>
+</body>
+</html>

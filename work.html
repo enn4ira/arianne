@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>arianne</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/work.css" rel="stylesheet">
+<link href="css/work.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      $('#reviewsImage1').addClass('visibility-hidden');
+      $('#portfolio-image2').addClass('visibility-hidden');
+      $("a[href*='#header']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutQuad');
+      });
+      $("a[href*='#portfolio']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#wb_portfolio').offset().top-68 }, 600, 'easeOutQuad');
+      });
+      function onScrollportfolio()
+      {
+         var $obj = $("#wb_portfolio");
+         if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+         {
+            $obj.addClass("in-viewport");
+            AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+            AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+         }
+      }
+      onScrollportfolio();
+      $(window).scroll(function(event)
+      {
+         onScrollportfolio();
+      });
+      $("#PanelLayer").panel({animate: true, animationDuration: 500, animationEasing: 'easeOutElastic', dismissible: false, display: 'push', position: 'left'});
+      $('.OverlayMenu1 .item-has-children').children('a').on('click', function(event)
+      {
+         event.preventDefault();
+         $(this).toggleClass('submenu-open').next('.sub-menu').slideToggle(0,'linear').end().parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(0,'linear');
+      });
+   });
+</script>
+</head>
+<body>
+   <div id="wb_header">
+      <div id="header">
+         <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-2">
+               <div id="wb_PanelMenu1" style="display:inline-block;width:48px;height:48px;z-index:0;">
+                  <a href="#PanelLayer" id="PanelMenu1">
+                     <span class="line"></span>
+                     <span class="line"></span>
+                     <span class="line"></span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:19;">
+      <div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:1;">
+         <a href="#intro"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+   </div>
+   <div id="wb_portfolio">
+      <div id="portfolio">
+         <div class="row">
+            <div class="col-1">
+               <div class="col-1-padding">
+                  <picture id="wb_Picture3" style="display:block;width:100%;height:auto;z-index:2">
+                     <img src="images/Untitled_design__4_-removebg-preview.png" id="Picture3" alt="" width="940" height="179">
+                  </picture>
+                  <div id="wb_Text3">
+                     <span style="color:#000000;font-family:Arial;font-size:13px;"><br><br></span>
+                  </div>
+                  <div id="wb_Text1">
+                     <span style="color:#FFFFFF;font-family:Impact;font-size:35px;">TRADITIONAL ART<br><br></span>
+                  </div>
+                  <div id="wb_PhotoGallery1" style="display:inline-block;width:100%;z-index:5;">
+                     <div id="PhotoGallery1">
+                        <div class="thumbnails">
+                           <div class="thumbnail">
+                              <a href="images/GOT series dagger.jpg"><img alt="" src="images/GOT series dagger.jpg" class="image" width="307" height="307"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/GOT series wildfire.jpg"><img alt="" src="images/GOT series wildfire.jpg" class="image" width="307" height="307"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/lady.jpg"><img alt="" src="images/lady.jpg" class="image" width="307" height="307"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                           <div class="thumbnail">
+                              <a href="images/mecha trad 1.jpg"><img alt="" src="images/mecha trad 1.jpg" class="image" width="307" height="307"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/sebastian.jpg"><img alt="" src="images/sebastian.jpg" class="image" width="307" height="307"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/346088338_857653489261087_3857869729157895719_n.jpg"><img alt="" src="images/346088338_857653489261087_3857869729157895719_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                           <div class="thumbnail">
+                              <a href="images/346094416_237873528828126_7983581541886421666_n.jpg"><img alt="" src="images/346094416_237873528828126_7983581541886421666_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/346094761_2500370363464592_1367133789499639519_n.jpg"><img alt="" src="images/346094761_2500370363464592_1367133789499639519_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/346096719_230993802911844_6928354771570262977_n.jpg"><img alt="" src="images/346096719_230993802911844_6928354771570262977_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                           <div class="thumbnail">
+                              <a href="images/346096996_157911523918065_5123559668273641007_n.jpg"><img alt="" src="images/346096996_157911523918065_5123559668273641007_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/346097572_183655854202868_1133282298486982724_n.jpg"><img alt="" src="images/346097572_183655854202868_1133282298486982724_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/346097923_937362677310847_2459652184298139381_n.jpg"><img alt="" src="images/346097923_937362677310847_2459652184298139381_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                           <div class="thumbnail">
+                              <a href="images/346098446_221197627285784_2259466060376433136_n (1).jpg"><img alt="" src="images/346098446_221197627285784_2259466060376433136_n (1).jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/346099874_628081689194350_8677660735573952628_n.jpg"><img alt="" src="images/346099874_628081689194350_8677660735573952628_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/346099889_1661520250974020_1251530952958017906_n.jpg"><img alt="" src="images/346099889_1661520250974020_1251530952958017906_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                           <div class="thumbnail">
+                              <a href="images/346100345_3552032458349422_6742083368224694985_n.jpg"><img alt="" src="images/346100345_3552032458349422_6742083368224694985_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/346100942_218781177566166_8271132043595316175_n (1).jpg"><img alt="" src="images/346100942_218781177566166_8271132043595316175_n (1).jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/346102617_989521422039072_4930207473661224777_n (1).jpg"><img alt="" src="images/346102617_989521422039072_4930207473661224777_n (1).jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                           <div class="thumbnail">
+                              <a href="images/346102636_989557728726264_7087160978496608667_n.jpg"><img alt="" src="images/346102636_989557728726264_7087160978496608667_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/346103953_160107313658128_5286847143444965659_n.jpg"><img alt="" src="images/346103953_160107313658128_5286847143444965659_n.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="wb_Text4">
+                     <span style="color:#FFFFFF;font-family:Impact;font-size:35px;"><br><br>DIGITAL ART<br><br></span>
+                  </div>
+                  <div id="wb_PhotoGallery2" style="display:inline-block;width:100%;z-index:7;">
+                     <div id="PhotoGallery2">
+                        <div class="thumbnails">
+                           <div class="thumbnail">
+                              <a href="images/alice.jpg"><img alt="" src="images/alice.jpg" class="image" width="307" height="384"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/ayato.jpg"><img alt="" src="images/ayato.jpg" class="image" width="307" height="307"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/gorou and itto.jpg"><img alt="" src="images/gorou and itto.jpg" class="image" width="307" height="384"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                           <div class="thumbnail">
+                              <a href="images/itto.jpg"><img alt="" src="images/itto.jpg" class="image" width="307" height="360"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/kadita.jpg"><img alt="" src="images/kadita.jpg" class="image" width="307" height="384"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/kaeya.jpg"><img alt="" src="images/kaeya.jpg" class="image" width="307" height="546"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                           <div class="thumbnail">
+                              <a href="images/yae miko.jpg"><img alt="" src="images/yae miko.jpg" class="image" width="307" height="409"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/scara.jpg"><img alt="" src="images/scara.jpg" class="image" width="307" height="307"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/landscape.jpg"><img alt="" src="images/landscape.jpg" class="image" width="307" height="304"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                           <div class="thumbnail">
+                              <a href="images/landscape2.jpg"><img alt="" src="images/landscape2.jpg" class="image" width="307" height="171"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/landscape3.jpg"><img alt="" src="images/landscape3.jpg" class="image" width="307" height="171"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/landscape4.jpg"><img alt="" src="images/landscape4.jpg" class="image" width="307" height="247"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="wb_Text5">
+                     <span style="color:#FFFFFF;font-family:Impact;font-size:35px;"><br><br>POSTERS<br><br></span>
+                  </div>
+                  <div id="wb_PhotoGallery3" style="display:inline-block;width:100%;z-index:9;">
+                     <div id="PhotoGallery3">
+                        <div class="thumbnails">
+                           <div class="thumbnail">
+                              <a href="images/274928251_770612361008915_1183974674429501586_n.jpg"><img alt="" src="images/274928251_770612361008915_1183974674429501586_n.jpg" class="image" width="307" height="434"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/275148725_2908032889495343_3526689970499315785_n.jpg"><img alt="" src="images/275148725_2908032889495343_3526689970499315785_n.jpg" class="image" width="307" height="434"></a>
+                           </div>
+                           <div class="thumbnail">
+                              <a href="images/275073205_1037148803896883_1620005296969098750_n.jpg"><img alt="" src="images/275073205_1037148803896883_1620005296969098750_n.jpg" class="image" width="307" height="434"></a>
+                           </div>
+                           <div class="clearfix visible-col3"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="wb_Text6">
+                     <span style="color:#FFFFFF;font-family:Impact;font-size:35px;"><br><br>WEBSITE<br></span><span style="color:#000000;font-family:Arial;font-size:13px;"><br></span>
+                  </div>
+                  <div id="wb_PhotoGallery4" style="display:inline-block;width:100%;z-index:11;">
+                     <div id="PhotoGallery4">
+                        <div class="thumbnails">
+                           <div class="thumbnail">
+                              <a href="images/Screenshot 2023-05-18 191302.png"><img alt="" src="images/Screenshot 2023-05-18 191302.png" class="image" width="934" height="438"></a>
+                           </div>
+                           <div class="clearfix visible-col1"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="wb_Text7">
+                     <span style="color:#000000;font-family:Arial;font-size:13px;"><br><br></span>
+                  </div>
+                  <a id="Button1" href="https://artcebu2018.wixsite.com/abcart" style="display:inline-block;width:132px;height:41px;z-index:13;">View Website</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_footer">
+      <div id="footer">
+         <div class="row">
+            <div class="col-1">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="PanelLayer" style="text-align:right;">
+      <div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:14;">
+         <img src="images/Parawan 1x1.jpg" id="Image1" alt="" width="306" height="306">
+      </div>
+      <div id="wb_Heading3" style="display:inline-block;width:100%;z-index:15;">
+         <h1 id="Heading3">arianne</h1>
+      </div>
+      <div id="wb_OverlayMenu1" style="display:inline-block;width:306px;height:120px;z-index:16;">
+         <div class="OverlayMenu1">
+            <ul class="OverlayMenu1" role="menu">
+               <li><a role="menuitem" href="./Home.html" class="OverlayMenu1-effect">Home</a></li>
+               <li><a role="menuitem" href="./About.html" class="OverlayMenu1-effect">About</a></li>
+               <li><a role="menuitem" href="./Work.html" class="OverlayMenu1-effect">Work</a></li>
+            </ul>
+         </div>
+      </div>
+      <div id="wb_Text2" style="position:absolute;top:auto !important;bottom:0 !important;width:100% !important;">
+         <span style="color:#FFFFFF;font-family:Arial;font-size:13px;line-height:21px;">Copyright 2020 All rights reserved.<br></span><span style="color:#BDB9E3;font-family:Arial;font-size:13px;line-height:12px;">WYSIWYG Web Builder</span>
+      </div>
+   </div>
+   <script>   
+   var wb_Timer1;
+   function TimerStartTimer1()
+   {
+      wb_Timer1 = setTimeout(function()
+      {
+         var event = null;
+         ShowPanel('PanelLayer', event);
+      }, 1000);
+   }
+   function TimerStopTimer1()
+   {
+      clearTimeout(wb_Timer1);
+   }
+   TimerStartTimer1();
+   </script>
+   <a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb18.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:3509px;margin:0;border-width:0;z-index:250" width="88" height="31"></a>
+</body>
+</html>
